@@ -734,7 +734,7 @@ main{
   }
   
   .box-service:hover {
-    background: linear-gradient(45deg, #562872, #048448);
+    /* background: linear-gradient(45deg, #562872, #048448); */
     transform: scale(1.06) ;
 
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.6); /* Adjust box shadow on hover */
