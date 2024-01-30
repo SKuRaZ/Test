@@ -710,7 +710,7 @@ button-main2{
 
 /* service  */
 main{
-    padding: 70px 4%;
+    padding: 70px 6%;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     /* gap: 30px; */
@@ -721,16 +721,25 @@ main{
     place-items: center; 
 }
 .svg{
-    padding: 10px;
+    /* padding: 10px; */
+    width: 90%;
+    height:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 .box-service {
     width: 90%;
     height: 400px;
-    /* border: 2px solid rgba(0, 0, 0, 0.1); */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     color: #000;
-    border-radius:20px;    /* background-color: rgb(33, 33, 33); */
+    border-radius:20px;
+    overflow: hidden;    
     transition: all 0.3s ease-in-out, transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: grid;
+    grid-template-rows: 300px 100px;
   }
   
   .box-service:hover {
@@ -738,15 +747,37 @@ main{
 
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.6); /* Adjust box shadow on hover */
   }
-  .box-service> .svg-web{
-    transform: translateY(-60px);
+  /* .box-service> .svg-web{
+    transform: translateY(-30px);
   }
   .talako-text{
-    transform: translateY(-130px);
+    transform: translateY(-50px);
 
+  } */
+  /* .svg-photo{
+    width: 90%;
+    height: 305px!important;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: 25px;
+    justify-self: center;
+    align-self: center;
   }
+  .svg-photo1{
+    width: 90%;
+    height: 305px!important;
+    object-fit: cover;
+ overflow: hidden;
+    margin-left: 25px;
+    margin-top: -14px;
+    transform: translateY(-10px);
+    justify-self: center;
+    align-self: center;
+  } */
   .services-heading{
+    margin: 0 5%;
     margin-top: 20px;
+    padding: 0 5%;
     padding-top: 30px;
     font-size: 35px;
     text-transform: uppercase;
