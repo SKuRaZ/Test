@@ -242,8 +242,25 @@ span {
     justify-content: space-around;
     transform: translateY(-50%);
     align-items: center;
+    padding: 0 10px;
 }
+.oval-flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.oval-flex img{
+    width: 50px;
+    height: 50px;
+}
+.oval-hr{
+    transform: rotate(90deg);
+    width: 70px;
+    height: 3px;
+    background-color: #2fdd35;
 
+}
 #about {
     background-color: #222;
     width: 100%;
@@ -259,6 +276,7 @@ span {
     gap: 60px;
     margin-right: 80px;
     transform: translateY(-20px);
+    align-items: center;
 }
 
 .about-image {
@@ -320,6 +338,35 @@ span {
 .about-heading::after {
     right: 50px;
 }
+/* top heading */
+.about-heading1 {
+    margin: 40px 8%;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+}
+
+.about-heading1::before,
+.about-heading1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: #3c8df3;
+}
+
+.about-heading1::before {
+    left: 50px;
+}
+
+.about-heading1::after {
+    right: 50px;
+}
 
 .second-text-about {
     padding-top: 15px;
@@ -350,6 +397,18 @@ span {
     /* padding: 14px 0px 15px; */
     text-transform: capitalize;
     letter-spacing: 1px;
+}
+.Specialize1 {
+    /* font-family: Tilt Neon; */
+    font-size: 20px;
+    font-weight: 600;
+    color:#fff;
+    /* padding: 14px 0px 15px; */
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .name {
@@ -721,12 +780,14 @@ main{
     place-items: center; 
 }
 .svg{
-    /* padding: 10px; */
+    padding: 10px;
     width: 90%;
     height:  auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    place-items: center; 
+    margin: 0 auto;
     text-align: center;
     overflow: hidden;
 }
@@ -735,12 +796,51 @@ main{
     height: 400px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     color: #000;
-    border-radius:20px;
-    overflow: hidden;    
+    border-radius: 20px;
+    overflow: hidden;
     transition: all 0.3s ease-in-out, transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
     display: grid;
-    grid-template-rows: 300px 100px;
-  }
+    grid-template-rows: 280px 120px;
+    position: relative;
+    cursor: grab;
+}
+
+/* Create triangle shape for waving color effect */
+.box-service::before,
+.box-service::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition: all 0.3s ease-in-out;
+    filter: blur(10px); /* Adjust blur intensity */
+}
+
+/* Triangle from top-left corner */
+.box-service::before {
+    top: 0;
+    left: 0;
+    border-width: 10px 0 0 10px;
+    border-color: transparent transparent transparent #6045ac; /* Adjust color as needed */
+}
+
+/* Triangle from bottom-right corner */
+.box-service::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 10px 10px 0px;
+    border-color: transparent #3c8df3 transparent transparent; /* Adjust color as needed */
+}
+
+/* Hover effect with animation */
+.box-service:hover::before,
+.box-service:hover::after {
+    width: 30px; /* Adjust the size of the triangles on hover */
+    height: 200px; /* Adjust the size of the triangles on hover */
+    filter: blur(1); 
+}
+
   
   .box-service:hover {
     transform: scale(1.06) ;
@@ -775,12 +875,43 @@ main{
     align-self: center;
   } */
   .services-heading{
-    margin: 0 5%;
+    margin: 0 6%;
     margin-top: 20px;
     padding: 0 5%;
     padding-top: 30px;
     font-size: 35px;
     text-transform: uppercase;
-    font-weight: 700;
-
+    font-weight: 900;
+font-family: Georgia, 'Times New Roman', Times, serif;
   }
+.service-text{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.about-heading2 {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+}
+
+.about-heading2::before,
+.about-heading2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: #3c8df3;
+}
+
+.about-heading2::before {
+    left: 50px;
+}
+
+.about-heading2::after {
+    right: 50px;
+}
